@@ -1,12 +1,13 @@
 <?php
-//connection to db
+//link to db
 include("config.php");
 
 session_start();
 
 
 if(isset($_REQUEST['submit'])){
-    echo "hello";
+    ini_set('display_errors', 1);
+
 $username =mysqli_escape_real_string($conn,$username);
 $password =mysqli_escape_real_string($conn,$password);
 $repeatpassword =mysqli_escape_real_string($conn,$repeatpassword);

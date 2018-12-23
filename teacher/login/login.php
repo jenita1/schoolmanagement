@@ -1,9 +1,9 @@
 <?php
-include ("../config.php");
+include ("config.php");
 session_start();
 if($_SERVER ["REQUEST METHOD"] =="POST"){
-  $username =mysqli_real_escape_string($conn,$_POST['username']);
-  $password =mysqli_real_escape_string($conn,$_POST['password']);
+  $username =mysqli_real_escape_string($link,$_POST['username']);
+  $password =mysqli_real_escape_string($link,$_POST['password']);
 
 
 //selecting from table teachers
